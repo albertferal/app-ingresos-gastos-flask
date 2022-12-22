@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresos - Gastos: {{ pageTitle }}</title> {# Recibimos variable #}
+</head>
+<style>
+    table, th, td {
+        border:1px solid rgb(83, 209, 9);
+    }
+</style>
+
+<body>
+
+    <header>
+        <div>
+            <a href="/">Inicio</a> |
+            <a href="/new">New</a>
+        </div>
+
+        <h1>App de Flask de  BZ XIII</h1>
+    </header>
+ 
+ 
+    <section>
+        {% block pageBase %} {#Hueco para recibir plantilla html#}
+        {% endblock %}
+    </section>
+ 
+ 
+    <footer>
+        &copy; 2022 - Todos los derechos resrvados
+    </footer>
+</body>
+</html>
