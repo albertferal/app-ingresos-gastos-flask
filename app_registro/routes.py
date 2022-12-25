@@ -28,4 +28,12 @@ def index():
 
 @app.route("/new")
 def create():
-    return render_template("new.html", pageTitle = "Alta")
+    return render_template("new.html", pageTitle = "Alta", typeAction="Alta", typeButton = "Guardar")
+
+@app.route("/update")
+def edit():
+    return render_template("update.html", pageTitle = "Modificar", typeAction="Modificación", typeButton = "Editar")
+
+@app.route("/delete")
+def remove():
+    return render_template("/delete.html", pageTitle = "Eliminar",  typeAction="Eliminar")

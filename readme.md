@@ -20,3 +20,6 @@ pip install -r requirements.txt
 ### Se puede dar el caso que el puerto ...../5000 esté ocupado por algun software de nuestro pc. En ese caso hay un comando especial para lanzar el servidor en un puerto diferente:
 ```flask --app hello run -p 500```
 ```flask --app hello --debug run -p 5001```
+## Otra alternativa para inivar el repo sería crear el archivo oculto .env y dentro agregar los siguientes comandos:
+- ```FLASK_APP=main.py```
+- ```FLASK_DEBUG=True```
