@@ -14,12 +14,12 @@ pip install -r requirements.txt
 - En windows ```set FLASK_APP=main.py```
 
 ## Comando para ejecutar el servidor:
-```flask --app hello run```
+```flask --app main run```
 ## Comando para que se actualize sin tener que apagar y ejecutar el servidor:
-```flask --app hello --debug run```
+```flask --app main --debug run```
 ### Se puede dar el caso que el puerto ...../5000 esté ocupado por algun software de nuestro pc. En ese caso hay un comando especial para lanzar el servidor en un puerto diferente:
-```flask --app hello run -p 500```
-```flask --app hello --debug run -p 5001```
+```flask --app main run -p 500```
+```flask --app main --debug run -p 5001```
 ## Otra alternativa para inivar el repo sería crear el archivo oculto .env y dentro agregar los siguientes comandos:
 - ```FLASK_APP=main.py```
 - ```FLASK_DEBUG=True```
